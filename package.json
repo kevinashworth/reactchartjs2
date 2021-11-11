@@ -16,6 +16,7 @@
     "url": "https://github.com/reactchartjs/react-chartjs-2/issues"
   },
   "dependencies": {
+    "chart.js": "2.9.4",
     "lodash": "^4.17.19",
     "prop-types": "^15.7.2"
   },
@@ -39,7 +40,6 @@
     "brfs": "^2.0.2",
     "canvas": "^2.6.1",
     "chai": "^4.2.0",
-    "chart.js": "2.6.0",
     "cross-env": "^7.0.2",
     "css-loader": "^3.6.0",
     "debug": "^4.1.1",
@@ -52,9 +52,9 @@
     "jsdom": "^16.3.0",
     "mocha": "^8.0.1",
     "rcolor": "^2.0.2",
-    "react": "^0.14 || ^15.0.0-rc || ^15.0",
+    "react": "^16.0.0 || ^17.0.0",
     "react-addons-test-utils": "^15.6.2",
-    "react-dom": "^0.14 || ^15.0.0-rc || ^15.0",
+    "react-dom": "^16.0.0 || ^17.0.0",
     "react-test-renderer": "15",
     "rimraf": "^3.0.2",
     "rollup": "^2.22.1",
@@ -66,9 +66,8 @@
     "webpack-dev-server": "^3.11.0"
   },
   "peerDependencies": {
-    "chart.js": "^2.3",
-    "react": "^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0",
-    "react-dom": "^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0"
+    "react": "^16.0.0 || ^17.0.0",
+    "react-dom": "^16.0.0 || ^17.0.0"
   },
   "browserify-shim": {
     "react": "global:React",
