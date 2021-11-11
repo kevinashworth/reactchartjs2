@@ -1,19 +1,19 @@
 {
-  "name": "react-chartjs-2",
+  "name": "reactchartjs2",
   "version": "2.11.1",
-  "description": "react-chartjs-2",
+  "description": "reactchartjs2",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
   "author": "reactchartjs",
-  "homepage": "https://github.com/reactchartjs/react-chartjs-2",
+  "homepage": "https://github.com/kevinashworth/reactchartjs2",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/reactchartjs/react-chartjs-2.git"
+    "url": "https://github.com/kevinashworth/reactchartjs2.git"
   },
   "bugs": {
-    "url": "https://github.com/reactchartjs/react-chartjs-2/issues"
+    "url": "https://github.com/kevinashworth/reactchartjs2/issues"
   },
   "dependencies": {
     "chart.js": "2.9.4",
@@ -78,8 +78,8 @@
     "clean": "rimraf lib es dist",
     "build:cjs": "babel src --out-dir lib",
     "build:es": "cross-env BABEL_ENV=jsnext babel src --out-dir es",
-    "build:umd": "cross-env BABEL_ENV=rollup NODE_ENV=development rollup -c -o dist/react-chartjs-2.js",
-    "build:umd:min": "cross-env BABEL_ENV=rollup NODE_ENV=production rollup -c -o dist/react-chartjs-2.min.js",
+    "build:umd": "cross-env BABEL_ENV=rollup NODE_ENV=development rollup -c -o dist/reactchartjs2.js",
+    "build:umd:min": "cross-env BABEL_ENV=rollup NODE_ENV=production rollup -c -o dist/reactchartjs2.min.js",
     "build": "npm run clean && npm run build:cjs && npm run build:es && npm run build:umd && npm run build:umd:min",
     "examples": "rollup -c example/rollup.config.js",
     "examples:clean": "rimraf example/dist",
@@ -95,7 +95,8 @@
     "chart-js",
     "chart.js",
     "react-chartjs-2",
-    "react chart.js"
+    "react chart.js",
+    "reactchartjs2"
   ],
   "types": "./index.d.ts"
 }
