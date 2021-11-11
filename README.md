@@ -41,13 +41,13 @@ Then open [`localhost:6006`](http://localhost:6006) in a browser.
 ## Installation via NPM
 
 ```bash
-npm install --save react-chartjs-2 chart.js
+npm install kevinashworth/reactchartjs2
 ```
 
 ## Installation via YARN
 
 ```bash
-yarn add react-chartjs-2 chart.js
+yarn add kevinashworth/reactchartjs2
 ```
 
 
@@ -56,7 +56,7 @@ yarn add react-chartjs-2 chart.js
 Check example/src/components/* for usage.
 
 ```js
-import { Doughnut } from 'react-chartjs-2';
+import { Doughnut } from 'kevinashworth/reactchartjs2';
 
 <Doughnut data={...} />
 ```
@@ -134,7 +134,7 @@ render() {
 Chart.js defaults can be set by importing the `defaults` object:
 
 ```javascript
-import { defaults } from 'react-chartjs-2';
+import { defaults } from 'kevinashworth/reactchartjs2';
 
 // Disable animating charts by default.
 defaults.global.animation = false;
@@ -143,7 +143,7 @@ defaults.global.animation = false;
 If you want to bulk set properties, try using the [lodash.merge](https://lodash.com/docs/#merge) function. This function will do a deep recursive merge preserving previously set values that you don't want to update.
 
 ```js
-import { defaults } from 'react-chartjs-2';
+import { defaults } from 'kevinashworth/reactchartjs2';
 import merge from 'lodash.merge';
 // or
 // import { merge } from 'lodash';
@@ -163,7 +163,7 @@ merge(defaults, {
 You can access the internal Chart.js object to register plugins or extend charts like this:
 
 ```JavaScript
-import { Chart } from 'react-chartjs-2';
+import { Chart } from 'kevinashworth/reactchartjs2';
 
 componentWillMount() {
   Chart.pluginService.register({
@@ -173,10 +173,6 @@ componentWillMount() {
   });
 }
 ```
-
-### Scatter Charts
-
-If you're using Chart.js 2.6 and below, add the `showLines: false` property to your chart options. This was later [added](https://github.com/chartjs/Chart.js/commit/7fa60523599a56255cde78a49e848166bd233c6e) in the default config, so users of later versions would not need to do this extra step.
 
 ### Events
 
